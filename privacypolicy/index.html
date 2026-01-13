@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - MyConsortium</title>
+<style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background:#004aad; color:#fff; padding:20px; text-align:center; }
+    main { max-width:800px; margin:40px auto; padding:0 20px; }
+    h1, h2, h3 { color:#004aad; }
+    p { line-height:1.6; margin-bottom:15px; }
+    footer { text-align:center; padding:20px; font-size:0.9em; color:#777; }
+    #cookieConsent { position: fixed; bottom: 0; left: 0; right: 0; background: #004aad; color: #fff; padding: 15px; text-align: center; display: none; }
+    #cookieConsent button { background:#fff; color:#004aad; border:none; padding:10px 20px; margin-left:15px; cursor:pointer; border-radius:5px; font-weight:bold; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Política de Privacidade - MyConsortium</h1>
+</header>
+
+<main>
+    <p>BSB Sapopemba, CNPJ 49.389.946/0001-80, atua como representante autorizado na divulgação e venda de consórcios, incluindo empresas como Itaú Consórcios, Âncora e Rodobens, mas sem vínculo direto com essas instituições.</p>
+
+    <h2>1. Coleta de Dados</h2>
+    <p>Coletamos informações fornecidas diretamente pelos usuários através de formulários de Lead Ads do Facebook/Instagram, incluindo nome, email, telefone e informações relacionadas ao interesse em consórcios.</p>
+
+    <h2>2. Uso dos Dados</h2>
+    <p>Os dados coletados são usados exclusivamente para contato comercial, envio de informações sobre consórcios e acompanhamento do interesse do usuário, conforme autorizado pelo mesmo.</p>
+
+    <h2>3. Compartilhamento de Dados</h2>
+    <p>Os dados não são vendidos ou compartilhados com terceiros fora do escopo do serviço de consórcios, exceto para a transmissão necessária a empresas de consórcio parceiras para análise de proposta, sempre respeitando a LGPD.</p>
+
+    <h2>4. Armazenamento e Segurança</h2>
+    <p>Os dados são armazenados de forma segura em nossos sistemas e/ou serviços de nuvem (ex.: AWS), protegidos por medidas técnicas e administrativas para evitar acesso não autorizado, perda ou alteração.</p>
+
+    <h2>5. Consentimento e Direitos do Usuário</h2>
+    <p>Ao fornecer seus dados, o usuário consente com o tratamento de dados conforme descrito nesta política. Usuários podem solicitar a exclusão ou correção de seus dados a qualquer momento através do email <a href="mailto:lucianodecarvalho@gmail.com">lucianodecarvalho@gmail.com</a>.</p>
+
+    <h2>6. Cookies e Tecnologias de Rastreamento</h2>
+    <p>Utilizamos cookies para melhorar a experiência do usuário e análise de desempenho. O usuário pode aceitar ou recusar cookies clicando no botão abaixo.</p>
+
+</main>
+
+<div id="cookieConsent">
+    Este site utiliza cookies para melhorar sua experiência.
+    <button id="acceptCookies">Aceitar Cookies</button>
+</div>
+
+<footer>
+    © 2026 BSB Sapopemba - Todos os direitos reservados
+</footer>
+
+<script>
+// Exibe o banner de cookies se ainda não aceito
+if(!localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookieConsent').style.display = 'block';
+}
+
+// Aceitar cookies
+document.getElementById('acceptCookies').onclick = function() {
+    localStorage.setItem('cookiesAccepted', 'true');
+    document.getElementById('cookieConsent').style.display = 'none';
+};
+</script>
+
+</body>
+</html>
